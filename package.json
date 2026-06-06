@@ -1,0 +1,28 @@
+{
+	"name": "appfood",
+	"version": "1.0.0",
+	"main": "Expressjs/index.js",
+	"scripts": {
+		"start": "node Expressjs/index.js",
+		"Appfood": "node Expressjs/index.js",
+		"dev": "nodemon Expressjs/index.js",
+		"migrate": "cd Expressjs && npx sequelize-cli db:migrate",
+		"seed": "cd Expressjs && npx sequelize-cli db:seed:all",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"bcryptjs": "^3.0.3",
+		"cors": "^2.8.6",
+		"dotenv": "^16.3.1",
+		"express": "^5.2.1",
+		"express-validator": "^7.3.2",
+		"jsonwebtoken": "^9.0.3",
+		"mysql2": "^3.22.4",
+		"sequelize": "^6.32.0",
+		"winston": "^3.19.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.14",
+		"sequelize-cli": "^6.6.5"
+	}
+}
